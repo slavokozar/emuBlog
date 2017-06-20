@@ -1,0 +1,158 @@
+.resort-show-top-image {
+  height: 40vh;
+  background: url("../img/slide1.jpg") center center;
+  position: relative;
+
+  .resort-show-header-wrapper {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .resort-show-header {
+    background-color: #ffffff;
+    padding: 40px;
+
+    h2 {
+      margin-top: 0;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 300;
+    }
+
+    .resort-show-header-star {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.resort-show-section2 {
+  padding-top: 80px;
+
+  .resort-show-detail {
+    padding-bottom: 40px;
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    p, span, li {
+      font-weight: 300;
+      font-size: 15px;
+    }
+  }
+  .resort-show-location {
+
+    i {
+      color: @resort-show-loc-i;
+      position: relative;
+      top: 5px;
+    }
+
+    #resort_map {
+      width: 100%;
+      height: 320px;
+      margin-top: 20px;
+
+    }
+  }
+
+  .resort-show-facilities {
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        display:inline-block;
+        padding-right: 15px;
+
+        i {
+          position: relative;
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  .resort-show-detail-right {
+    .resort-create-btn-wrapper {
+      margin-bottom: 40px;
+    }
+
+    .resort-create-btn {
+      padding: 20px 45px 20px 45px;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    .resort-show-detail {
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-weight: 700;
+      }
+
+      .resort-show-test-content {
+        padding-bottom: 30px;
+        border-bottom: @resort-show-test-border;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+          border: none;
+        }
+
+        p > em {
+          color: @resort-show-test-name;
+        }
+      }
+    }
+  }
+
+}
+
+.sticky-resort-create-btn {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .resort-show-section2 {
+    padding-top: 30px;
+
+    .resort-show-detail-left {
+      .resort-show-detail {
+        padding-bottom: 20px;
+      }
+    }
+    .resort-show-detail-right {
+      .resort-create-btn-wrapper {
+        display: none;
+      }
+      h4 {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .sticky-resort-create-btn {
+    display: unset;
+
+    .resort-create-btn {
+      border-radius: 0;
+      font-size: 15px;
+      margin: auto;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 0 10px 0;
+      opacity: 0.8;
+    }
+  }
+}
+
+

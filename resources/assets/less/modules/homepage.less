@@ -1,0 +1,420 @@
+.jumbotron {
+  //background: url("../img/hero_img.JPG") no-repeat center center;
+  //background-size: cover;
+  //font-weight: bold;
+  //opacity: 0.9;
+  //filter: alpha(opacity=90);
+  background-color: transparent;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+//
+//.transparent-box {
+//  margin: 30px;
+//  background: rgba(255,255,255,0.6);
+//  border: 1px solid lightgrey;
+//}
+
+.transparent-box h1 {
+  color: #ED1C24;
+}
+
+.transparent-box p {
+  color: black;
+}
+
+.homepage-section-a {
+  background-color: white;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.homepage-section-a .jumbotron .container h1 {
+  color: #2453A7;
+  text-align: center;
+  font-weight: bold;
+}
+
+.homepage-section-b {
+  background-color: #F0F0F0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: black;
+}
+
+.homepage-searchbox {
+  border: 1px solid #b3b3b3;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+//.homepage-searchtime {
+//  padding-top: 5px;
+//}
+
+.homepage-searchbox .btn-primary {
+  margin-top: 7px;
+  padding: 15px 30px 15px 30px;
+  background-color: #4BB6E6;
+  border-bottom-color: #4BB6E6;
+}
+
+.homepage-section-b i {
+  font-size: 100px;
+}
+
+@media (min-width: 992px) {
+  .homepage-col5 {
+    width: 20%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.homepage-event-search {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.homepage-event-contents {
+  padding-top: 50px;
+}
+
+.homepage-event-contens-head {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  color: black;
+}
+
+.homepage-sportnews-div {
+  border-right: #7E7E7E 1px solid;
+}
+
+.homepage-sportnews-div:last-child {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .homepage-sportnews-div {
+    border-right: none;
+  }
+}
+
+.homepage-popular-sports {
+  margin: 5%;
+}
+
+.homepage-listed-sports > img {
+  width: 100%;
+  height: auto;
+}
+
+.homepage-world-map {
+  max-width: 1200px;
+  max-height: 400px;
+  text-align: center;
+}
+
+.homepage-user-feedback {
+  display: flex;
+  align-items: center;
+}
+
+.homepage-user-feedback-img {
+  margin: 2%;
+}
+
+.homepage-user-feedback img {
+  width: 100px;
+  height: auto;
+}
+
+.homepage-user-feedback-2 {
+  margin-top: 2%;
+}
+
+.homepage-user-feedback-doc {
+  width: 100%;
+}
+
+li .homepage-functionality {
+  font-weight: bold;
+}
+
+.homepage-sportnews-image {
+  max-width: 100%;
+  max-height: 115px;
+  position: center;
+}
+
+//new
+
+.homepage-header {
+  margin-top: 140px;
+  margin-bottom: 140px;
+
+  h1 {
+    font-family: @font-secondary;
+  }
+
+  .homepage-headline {
+    font-weight: 900;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 21px;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.home-form-back {
+  background: url("../img/homepage/banner-hp.png") center center;
+  background-repeat: no-repeat;
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  .home-search-form {
+    display: flex;
+    font-family: @font-secondary;
+    margin: auto;
+    background-color: #ffffff;
+
+    .homepage-searchbox-wrapper {
+      border: @hp-input-border;
+      border-radius: 5px 0 0 5px;
+      border-right: none;
+      display: flex;
+      align-items: center;
+      flex: 5;
+
+      .home-input-wrapper {
+        flex: 1;
+        width: 100%;
+        border-right: @hp-input-border;
+
+        &:last-of-type {
+          border: none;
+        }
+      }
+
+      label {
+        font-weight: 300;
+        padding: 5px 0 0 12px;
+      }
+
+      .homepage-search-input {
+        border: none;
+        box-shadow: none;
+
+        &:hover {
+          outline: none;
+        }
+      }
+
+    }
+
+    .homepage-search-btn {
+      flex: 1;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-radius: 0 5px 5px 0;
+      font-size: 18px;
+    }
+  }
+}
+
+.home-section2-diagonal {
+  padding-top: 200px;
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  background-color: @hp-sec2-bc;
+  margin-top: 200px;
+}
+
+.home-section2 {
+  background-color: @hp-sec2-bc;
+  margin-top: -100px;
+}
+
+.homepage-description {
+
+  .homepage-dsc-content {
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+
+  h3 {
+    font-family: @font-secondary;
+    font-weight: 200;
+    color: @hp-des-h3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .homepage-description-btn {
+    padding: 10px 40px 10px 40px;
+    border-radius: 3px;
+    -webkit-box-shadow: 10px 10px 48px -17px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 10px 10px 48px -17px rgba(0, 0, 0, 0.77);
+    box-shadow: 10px 10px 48px -17px rgba(0, 0, 0, 0.77);
+    transition: all .2s;
+
+    &:hover {
+      //box-shadow: 10px 10px 58px rgba(0, 0, 0, 0.3);
+      width: 170px;
+      height: 50px;
+    }
+  }
+
+}
+
+.homepage-toppick-header {
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+  h2 {
+    font-family: @font-secondary;
+    font-weight: 300;
+
+    .homepage-toppick-headline {
+      font-weight: 800;
+    }
+  }
+
+  h4 {
+    font-weight: 300;
+    color: @hp-tp-header-h4;
+  }
+}
+
+.homepage-toppick-contents {
+
+  a:hover {
+    text-decoration: none;
+  }
+
+    .home-toppick-content {
+      padding-bottom: 20px;
+
+      h4 {
+        a {
+          color: @hp-tp-contents-h4;
+        }
+      }
+
+      p {
+        font-weight: 300;
+      }
+
+      .homepage-toppick-readmore {
+        a {
+          color: @hp-tp-readmore;
+          font-family: @font-secondary;
+        }
+      }
+
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+  .homepage-header {
+    margin-top: 100px;
+    margin-bottom: 40px;
+
+    p {
+      font-size: 18px;
+      width: 70%;
+    }
+  }
+
+  .home-section2-diagonal {
+    margin-top: 50px;
+    padding-top: 150px;
+  }
+
+  .home-form-back {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    .home-search-form {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: auto;
+      background-color: transparent;
+
+      .homepage-searchbox-wrapper {
+        border: none;
+        border-right: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+
+        .home-input-wrapper {
+          flex: 1;
+          border: none;
+        }
+
+        label {
+          padding: 5px 0 0 12px;
+        }
+
+        .homepage-search-input {
+          border: @hp-input-border;
+          border-radius: 5px;
+          box-shadow: none;
+
+          &:hover {
+            outline: none;
+          }
+        }
+
+      }
+
+      .homepage-search-btn {
+        flex: 1;
+        border-radius: 2px;
+        width: 60%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 10px auto 0 auto;
+        -webkit-box-shadow: 10px 10px 48px -17px rgba(0, 0, 0, 0.77);
+        -moz-box-shadow: 10px 10px 48px -17px rgba(0, 0, 0, 0.77);
+        box-shadow: 10px 10px 48px -17px rgba(0, 0, 0, 0.77);
+      }
+    }
+  }
+
+  .homepage-description .homepage-dsc-content {
+    padding-bottom: 30px;
+  }
+
+  .homepage-toppick-header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .home-search-form {
+    width: 90%;
+    margin: auto;
+  }
+}

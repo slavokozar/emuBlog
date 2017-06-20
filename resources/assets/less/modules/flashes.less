@@ -1,0 +1,26 @@
+#js-flashes .alert {
+    opacity: 1;
+    position: fixed;
+    top: 10px;
+    left: calc(~"50% - 110px");
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+    z-index: 100000;
+    animation-name: alert-fade-in;
+    animation-duration: 3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1)
+}
+
+.alert {
+    font-weight: 400;
+    border: 0px;
+    border-radius: 2px;
+
+    .progress {
+        height: 5px;
+        margin-bottom: 5px;
+        border-radius: 0;
+        width: 100%;
+    }
+}

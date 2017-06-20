@@ -1,0 +1,165 @@
+@import "variables_bootstrap.less";
+@import "variables_custom.less";
+@import "bootstrap/bootstrap.less";
+@import "bootstrap-select/bootstrap-select.less";
+@import "font-awesome/font-awesome.less";
+@import (inline) "easy-autocomplete/easy-autocomplete.css";
+@import (inline) "select2/select2.css";
+//your custom modules imports
+@import "modules/homepage.less";
+@import "modules/user_page.less";
+@import "modules/results_listing.less";
+@import "modules/reservations_create.less";
+@import "modules/reservation_index.less";
+@import "modules/reservation_show.less";
+@import "modules/resort_show.less";
+@import "modules/navbar.less";
+@import "modules/footer.less";
+@import "modules/layout.less";
+@import "modules/flashes.less";
+@import "modules/resort_index.less";
+@import "modules/resort_create.less";
+@import "modules/auth.less";
+
+body {
+  color: @color-primary-dark;
+  font-family: @font-primary;
+}
+
+#wrapper {
+  padding-top: 65px;
+}
+
+.wrapper-margin {
+  margin-top: 70px;
+  margin-bottom: 100px;
+
+  @media (max-width: 991px) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.stop-float {
+  clear: both;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url('../fonts/MaterialIcons-Regular.woff2') format('woff2'),
+  url('../fonts/MaterialIcons-Regular.woff') format('woff'),
+  url('../fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.primary-btn-styling {
+  background: @primary-btn;
+  color: #FFFFFF;
+  border: none;
+  box-shadow: inset 0 0 0 3px @primary-btn;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.secondary-btn-styling {
+  background-color: #FFFFFF;
+  color: @secondary-btn;
+  border: none;
+  box-shadow: inset 0 0 0 3px @secondary-btn-border-color;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+}
+
+.tertiary-btn-styling {
+  background-color: #FFFFFF;
+  color: @secondary-btn;
+  border: none;
+  box-shadow: inset 0 0 0 2px @tertiary-btn-border-color;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+}
+
+.form-input-styling {
+  height: 40px;
+  border: @form-input-border;
+  border-radius: 3px;
+  box-shadow: none;
+
+  &:hover {
+    outline: none;
+  }
+}
+
+.form-label-styling {
+  padding-top: 9px;
+  color: @form-label;
+  @media screen and (max-width: 768px) {
+    padding-top: 0px;
+  }
+}

@@ -1,0 +1,76 @@
+.resort-index-content-wrapper{
+  float: left;
+  width: 50%;
+}
+.resort-index-filter{
+  border-bottom: @resort-id-filter-border;
+
+  button{
+    border: none;
+    background-color: white;
+    margin-left: 45px;
+    padding-bottom: 12px;
+
+    i{
+      position: relative;
+      top: 6px;
+      color: @resort-id-filter-i;
+    }
+  }
+}
+
+.resort-index-contents{
+  margin: 50px 30px 0 30px;
+
+
+  .resort-index-content{
+    border: none;
+    padding-top: 20px;
+
+    .resort-index-content-img{
+      position: relative;
+
+      i{
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        color: #ffffff;
+      }
+    }
+    h3{
+      font-weight: 700;
+      a{
+        color: @resort-content-h3;
+      }
+    }
+
+    p{
+      font-weight: 300;
+    }
+
+    .resort-show-header-star{
+      i{
+        font-size: 16px;
+      }
+    }
+  }
+}
+.resort-index-map-wrapper{
+  float: left;
+  width: 50%;
+
+#resort-index-map{
+  height: 2000px;
+  background-color: gainsboro;
+}
+}
+
+@media (max-width: 768px) {
+  .resort-index-content-wrapper{
+    width: 100%;
+  }
+.resort-index-map-wrapper{
+  display: none;
+}
+}
+

@@ -1,0 +1,117 @@
+.login-form-wrapper {
+  border: @login-border;
+  padding: 50px;
+
+  //apply to 2 places which are located in different div
+  .login-btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    font-size: 16px;
+
+    &.primary-login-btn{
+      padding-top: 17px;
+      padding-bottom: 17px;
+
+      &:hover{
+        background-color: @login-btn-bc-hover;
+      }
+    }
+  }
+
+  h2{
+    margin-top: 0;
+    font-weight: 300;
+    span{
+      color: @login-h2-span;
+      font-weight: 700;
+    }
+  }
+  .login-form-content{
+    margin-bottom: 20px;
+
+    label{
+      font-size: 16px;
+
+      span{
+        font-weight: 300;
+        font-size: 14px;
+      }
+    }
+
+    input{
+    border: @login-input-border;
+    box-shadow: none;
+    }
+
+    input[type="email"], [type="password"]{
+      height: 56px;
+      font-size: 18px;
+    }
+
+  }
+
+  .login-sns-btn-wrapper{
+    border-top: @login-border;
+    padding-top: 25px;
+
+    .login-form-content-facebook{
+      padding-bottom: 15px;
+
+      .login-btn-facebook{
+        background-color: @facebook-color;
+      }
+    }
+
+    .login-btn-google{
+      background-color: @google-color;
+    }
+  }
+}
+
+@media screen and (max-width: 991px){
+  .login-form-wrapper {
+    margin: 0;
+    border: none;
+    padding: 20px 0px;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+  }
+}
+
+@media (max-width: 768px){
+  .login-form-wrapper {
+    .login-btn {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 16px;
+
+      &.primary-login-btn{
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+      }
+    }
+
+    h2{
+      margin-top: 0;
+      font-weight: 300;
+      span{
+        color: @login-h2-span;
+        font-weight: 700;
+      }
+    }
+    .login-form-content{
+      margin-bottom: 10px;
+
+      input[type="email"], [type="password"]{
+        height: 46px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,71 @@
+//layout
+.user-profile-nav-wrapper {
+  border-right: @user-profile-border;
+  padding-bottom: 300px;
+
+  .user-profile-nav {
+
+    li {
+      a {
+        color: @user-profile-nav-li;
+
+      }
+
+      &.active > a, a:hover, a:focus {
+        font-weight: 700;
+        color: @user-profile-nav-li-tog;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  .user-profile-nav-wrapper {
+    border-right: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+    .user-pf-nav-m-header {
+      font-size: 16px;
+    }
+
+    .user-profile-nav {
+      background-color: @user-profile-nav-m-bc;
+    }
+
+  }
+}
+
+//general styling for user profile
+.user-profile {
+  h3 {
+    color: @form-heading;
+    margin: 0;
+  }
+  .user-profile-form {
+    padding-top: 50px;
+
+    .user-profile-btn {
+      a, button {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .user-profile {
+    margin-top: 20px;
+
+    .user-profile-form {
+      padding-top: 20px;
+    }
+  }
+}
+
+.booking_table, .filter {
+  padding-top: 20px;
+}
