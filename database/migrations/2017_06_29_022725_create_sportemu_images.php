@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSportemuSportsTable extends Migration
+class CreateSportemuImages extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateSportemuSportsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sportemu_sports', function (Blueprint $table) {
+        Schema::create('sportemu_images', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name', 255);
-            $table->string('description');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateSportemuSportsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sportemu_sports');
+        Schema::dropIfExists('sportemu_images');
     }
 }

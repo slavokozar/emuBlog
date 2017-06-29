@@ -21,6 +21,7 @@ class CreateSportemuResortsSportsTable extends Migration
 
         \Schema::table('sportemu_resorts_sports', function (Blueprint $table) {
             $table->foreign('sport_id')->references('id')->on('sportemu_sports');
+            $table->foreign('resort_id')->references('id')->on('sportemu_resorts');
         });
     }
 
@@ -33,6 +34,7 @@ class CreateSportemuResortsSportsTable extends Migration
     {
         \Schema::table('sportemu_resorts_sports', function (Blueprint $table) {
             $table->dropForeign(['sport_id']);
+            $table->dropForeign(['resort_id']);
         });
 
         Schema::dropIfExists('sportemu_resorts_sports');

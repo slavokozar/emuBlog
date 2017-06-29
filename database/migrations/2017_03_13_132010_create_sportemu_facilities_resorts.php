@@ -32,7 +32,7 @@ class CreateSportemuFacilitiesResorts extends Migration
      */
     public function down()
     {
-        \Schema::table('sportemu_facilities_resorts', function (Blueprint $table) {
+        Schema::table('sportemu_facilities_resorts', function (Blueprint $table) {
             $table->dropForeign(['resort_id']);
             $table->dropForeign(['facility_id']);
         });

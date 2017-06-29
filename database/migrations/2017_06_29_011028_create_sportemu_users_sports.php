@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSportemuResortsAdmins extends Migration
+class CreateSportemuUsersSports extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,16 @@ class CreateSportemuResortsAdmins extends Migration
      */
     public function up()
     {
-        Schema::create('sportemu_resorts_admins', function (Blueprint $table) {
+        Schema::create('sportemu_users_sports', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
-            $table->unsignedInteger('resort_id');
-            $table->boolean('owner');
+            $table->unsignedInteger('sport_id');
         });
 
-        Schema::table('sportemu_resorts_admins', function (Blueprint $table) {
+        // Foreign Keys
+        Schema::table('sportemu_users_sports', function (Blueprint $table) {
+            $table->foreign('sport_id')->references('id')->on('sportemu_sports');
             $table->foreign('user_id')->references('id')->on('sportemu_users');
-            $table->foreign('resort_id')->references('id')->on('sportemu_resorts');
         });
     }
 
@@ -33,11 +33,11 @@ class CreateSportemuResortsAdmins extends Migration
      */
     public function down()
     {
-        \Schema::table('sportemu_resorts_admins', function (Blueprint $table) {
+        Schema::table('sportemu_users_sports', function (Blueprint $table) {
+            $table->dropForeign(['sport_id']);
             $table->dropForeign(['user_id']);
-            $table->dropForeign(['resort_id']);
         });
 
-        Schema::dropIfExists('sportemu_resorts_admins');
+        Schema::dropIfExists('sportemu_users_sports');
     }
 }
