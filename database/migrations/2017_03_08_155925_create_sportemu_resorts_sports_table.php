@@ -13,6 +13,7 @@ class CreateSportemuResortsSportsTable extends Migration
      */
     public function up()
     {
+
         Schema::create('sportemu_resorts_sports', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('resort_id');
